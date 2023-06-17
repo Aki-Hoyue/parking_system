@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parking System</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="parking.js" async></script>
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+</head>
+<body onload="loding()">
+	<table id="ParkingArea">
+		<caption>Parking Area</caption>
+		<tr>
+			<th></th>
+			<th>A / 0</th>
+			<th>B / 1</th>
+			<th>C / 2</th>
+			<th>D / 3</th>
+			</tr>
+		<tr>
+			<th>8</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<th>7</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<th>6</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<th>5</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<th>4</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<th>3</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<th>2</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<th>1</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<th>0</th>
+			<td></td>
+			<td id="entrance_point">Entrance</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<br>
+	<h2>Dashboard</h2>
+		<form id="parking_form">
+		<fieldset>
+			<legend>Enter</legend>
+			<label for="entrance_time">Entrance Time:</label>
+			<input type="text" id="entrance_time" name="entrance_time" maxlength="80" placeholder="yyyy/mm/dd hh:mm:ss" size="60" required><br>
+			<label for="entrance_name" >License:</label>
+			<input type="text" id="entrance_name" name="entrance_name" maxlength="30" size="50" required><br>
+			<input type="button" value="Park" onclick="input()">
+		</fieldset>
+		<fieldset>
+			<legend>Exit</legend>
+			<label for="out_time">Exit Time:</label>
+			<input type="text" id="out_time" name="out_time" maxlength="80" placeholder="yyyy/mm/dd hh:mm:ss" size="60" required><br>
+			<label for="out_name">License:</label>
+			<input type="text" id="out_name" name="out_name" maxlength="30" size="50" required><br>
+			<input type="button" value="Check Out" onclick="output()">
+		</fieldset>
+		<fieldset>
+			<legend>Output</legend>
+			<label id="info_box">Information here...</label><br><br>
+			<label>Notice: The format of the time must be "<em>yyyy/mm/dd hh:mm:ss</em>"</label><br>
+			<label>Comment: a cell in <span style="color: aquamarine;">aquamarine</span> is <em>unavailable</em>, and that in <span style="color: green;">green</span> is <em>available</em>, in <span style="color: red;">red</span> is <em>occupied</em>.</label><br>
+			<input type="reset" value="Clear">
+		</fieldset>
+		</form>
+	
+</body>
+</html>

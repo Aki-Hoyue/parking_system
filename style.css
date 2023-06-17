@@ -1,0 +1,41 @@
+table{
+    width: 50%;
+    border-collapse: collapse;
+    float: left;
+}
+
+table caption{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+th,td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 14px 0;
+}
+
+table tbody tr{
+    background-color: #eee;
+}
+
+th{
+    background-color:cadetblue;
+    color:whitesmoke;
+}
+
+#entrance_point{
+    background-color: goldenrod;
+    color: purple;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+} 
+
+form{
+    font-size: 14pt;
+}
