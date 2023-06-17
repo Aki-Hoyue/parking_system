@@ -72,6 +72,16 @@ function input()
         throw new Error("name error.");
     }
 
+    for(var i = heapSize + 1; i <= SIZE; i++)
+    {
+        var temp = heap[i];
+        if(pos[temp.x][temp.y].name == entranceName.value)
+        {
+            window.alert("The car has already been parked!");
+            throw new Error("repark error.");
+        }
+    }
+
     var parkArea = extractMinFromHeap(heap);
     pos[parkArea.x][parkArea.y].status = 'occupied';
     pos[parkArea.x][parkArea.y].name = entranceName.value;
