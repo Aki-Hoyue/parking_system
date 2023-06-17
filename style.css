@@ -1,5 +1,5 @@
-table{
-    width: 50%;
+#ParkingArea{
+    width: 100%;
     border-collapse: collapse;
     float: left;
 }
@@ -10,17 +10,17 @@ table caption{
     margin: 1em 0;
 }
 
-th,td{
+#ParkingArea th,#ParkingArea td{
     border: 1px solid black;
     text-align: center;
     padding: 14px 0;
 }
 
-table tbody tr{
+#ParkingArea tbody tr{
     background-color: #eee;
 }
 
-th{
+#ParkingArea th{
     background-color:cadetblue;
     color:whitesmoke;
 }
